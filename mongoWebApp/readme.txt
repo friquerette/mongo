@@ -5,3 +5,5 @@ mvn eclipse:eclipse -Dwtpversion=2.0
 mvn eclipse:clean
 
 gradleSimpleWS contient premier exemple mongoDB 
+
+mongod --dbpath c:\project\mongodb
