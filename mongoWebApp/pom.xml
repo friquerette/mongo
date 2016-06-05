@@ -17,6 +17,8 @@
 		<jcl.slf4j.version>1.7.12</jcl.slf4j.version>
 		<jstl.version>1.2</jstl.version>
 		<servletapi.version>3.1.0</servletapi.version>
+		<mongo-java-driver.version>3.2.2</mongo-java-driver.version>
+		<spring-data-mongodb.version>1.9.1.RELEASE</spring-data-mongodb.version>
 	</properties>
 
 	<dependencies>
@@ -74,7 +76,20 @@
 			<version>${servletapi.version}</version>
 			<scope>provided</scope>
 		</dependency>
-
+		
+		<!-- mongodb java driver -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>${mongo-java-driver.version}</version>
+		</dependency>
+		
+		<!-- Spring data mongodb -->
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-mongodb</artifactId>
+		    <version>${spring-data-mongodb.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
